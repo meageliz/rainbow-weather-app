@@ -7,6 +7,7 @@ h1 {
   font-size: 60px;
   padding: 40px auto 20px auto;
   margin: 40px auto 10px auto;
+  margin-left: -20px;
 }
 
 h2 {
