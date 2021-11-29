@@ -1,4 +1,4 @@
-// Search by location
+// Search by location function
 
 function showWeather(response) {
   let temp = Math.round(response.data.main.temp);
@@ -35,7 +35,7 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchByLocation);
 }
 
-// Search by city
+// Search by city function
 
 function searchByCity(city) {
   let apiKey = "53315a4c01471ff10f1bbba4b3a95f94";
@@ -49,7 +49,7 @@ function handleSubmit(event) {
   searchByCity(city);
 }
 
-// Time and date display
+// Time and date display function
 
 function formatDate(date) {
   let todaysDate = date.getDate();
@@ -92,11 +92,7 @@ function formatDate(date) {
   return `${day}, ${month} ${todaysDate} at ${hours}:${minutes}`;
 }
 
-let dateElement = document.querySelector("#date-time");
-let currentTime = new Date();
-dateElement.innerHTML = formatDate(currentTime);
-
-// Temperature unit display
+// Temperature unit display function
 
 function convertToFahrenheit(event) {
   event.preventDefault();
@@ -111,6 +107,8 @@ function convertToCelsius(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+// Triggers
+
 let celsiusTemperature = 17;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
@@ -119,12 +117,14 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-// Button triggers
-
 let searchButton = document.querySelector("form");
 searchButton.addEventListener("click", handleSubmit);
 
 let currentLocationButton = document.querySelector("#location-button-id");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+let dateElement = document.querySelector("#date-time");
+let currentTime = new Date();
+dateElement.innerHTML = formatDate(currentTime);
 
 searchByCity("London");
