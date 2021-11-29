@@ -4,12 +4,15 @@ function showWeather(response) {
   let temp = Math.round(response.data.main.temp);
   let city = response.data.name;
   let description = response.data.weather[0].main;
+  let windSpeed = Math.round(response.data.wind.speed);
   let tempDisplay = document.querySelector("h1 .temperature");
   let descriptionDisplay = document.querySelector("#weather-description");
+  let windSpeedDisplay = document.querySelector("#wind-speed");
   let cityDisplay = document.querySelector("h2");
   let iconElement = document.querySelector("#icon");
   tempDisplay.innerHTML = `${temp}`;
   descriptionDisplay.innerHTML = `${description}`;
+  windSpeedDisplay.innerHTML = `Wind: ${windSpeed} km/h`;
   cityDisplay.innerHTML = `${city}`;
   iconElement.setAttribute(
     "src",
