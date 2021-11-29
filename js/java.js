@@ -7,9 +7,14 @@ function showWeather(response) {
   let tempDisplay = document.querySelector("h1 .temperature");
   let descriptionDisplay = document.querySelector("#weather-description");
   let cityDisplay = document.querySelector("h2");
+  let iconElement = document.querySelector("#icon");
   tempDisplay.innerHTML = `${temp}`;
   descriptionDisplay.innerHTML = `${description}`;
   cityDisplay.innerHTML = `${city}`;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchByLocation(position) {
