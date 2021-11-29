@@ -66,10 +66,10 @@ img {
 }
 
 .search-button {
-  background-color: lightpink;
+  background-color: #c2b8ed;
+  border-color: #c2b8ed;
   color: white;
   border-radius: 30px;
-  border-color: lightpink;
   border-width: 0px;
   padding: 5px 25px;
   transition: all 200ms ease-in-out;
@@ -77,8 +77,8 @@ img {
 }
 
 .location-button {
-  background-color: lightpink;
-  border-color: lightpink;
+  background-color: #c2b8ed;
+  border-color: #c2b8ed;
   border-width: 0px;
   color: white;
   border-radius: 30px;
