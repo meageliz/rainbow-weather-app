@@ -29,7 +29,8 @@
       <div class="weather-app">
         <form>
         <div class="city-picker">Pick a city, any city...</div>
-
+<div class="row">
+  <div class="col-6">
           <input
             type="search"
             class="city-input"
@@ -37,7 +38,8 @@
             placeholder="  i.e. Madrid, Paris, Bogotá..."
             autofocus="on"
           />
-
+</div>
+<div class="col-3">
           <input
             type="submit"
             class="search-button"
@@ -45,12 +47,14 @@
             value="Search city"
           />
         </form>
-<br />
+
+</div>
+<div class="col-3">
         <button class="location-button" type="button" id="location-button-id">
           Current location
         </button>
-
-
+</div>
+</div>
         <br />
         <h1>
           <img src="" id="icon" class="float-left" />
