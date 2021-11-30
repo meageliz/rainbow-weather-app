@@ -10,6 +10,7 @@ function showWeather(response) {
   let windSpeedDisplay = document.querySelector("#wind-speed");
   let cityDisplay = document.querySelector("h2");
   let iconElement = document.querySelector("#icon");
+  celsiusTemperature = temp;
   tempDisplay.innerHTML = `${temp}`;
   descriptionDisplay.innerHTML = `${description}`;
   windSpeedDisplay.innerHTML = `Wind: ${windSpeed} km/h`;
