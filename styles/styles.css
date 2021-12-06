@@ -58,7 +58,7 @@ img {
 
 .city-picker {
   color: rgb(100, 99, 99);
-  margin: 70px auto 25px auto;
+  margin: 50px auto 25px auto;
 }
 
 .city-input {
@@ -103,7 +103,7 @@ img {
   margin-top: 0px;
   text-align: center;
   color: #000;
-  margin-bottom: 45px;
+  margin-bottom: 55px;
 }
 
 .weather-forecast-date {
@@ -123,6 +123,7 @@ img {
   text-align: center;
   font-family: "PT Mono", monospace;
   font-size: 13px;
+  margin-bottom: 30px;
 }
 
 .coder-link {
