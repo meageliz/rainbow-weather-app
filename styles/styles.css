@@ -76,7 +76,7 @@ img {
   color: white;
   border-radius: 30px;
   border-width: 0px;
-  padding: 5px 25px;
+  padding: 5px 20px;
   transition: all 200ms ease-in-out;
   margin-left: 30px;
 }
@@ -89,14 +89,17 @@ img {
   border-radius: 30px;
   padding: 5px 17px;
   transition: all 200ms ease-in-out;
+  margin-left: -15px;
 }
 
-.hover search-button {
-  background-color: lightgrey;
+.search-button:hover {
+  background-color: white;
+  color: #c2b8ed;
 }
 
-.hover location-button {
-  background-color: lightgrey;
+.location-button:hover {
+  background-color: white;
+  color: #c2b8ed;
 }
 
 .weather-forecast {
